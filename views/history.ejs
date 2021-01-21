@@ -50,7 +50,7 @@
         <td scope="row"><%=doc.sender%></td>
         <td><%=doc.receiver%></td>
         <td><%=doc.amount%></td>
-        <td><%=doc.transferredAt.toString().split("-")[0]%></td>
+        <td><%=doc.transferredAt.toString().split("GMT")[0]%></td>
       </tr>
     </tbody>
     <%})%>
