@@ -74,7 +74,9 @@ nav > a:hover {
   color: lightblue;
   width: 75%;
 }
-
+.container {
+  min-height: 90vh;
+}
 .form {
   width: 40%;
 }
