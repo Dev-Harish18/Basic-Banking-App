@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const xss = require("xss-clean");
-const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const dotenv = require("dotenv");
 const flash = require("connect-flash");
@@ -42,12 +41,11 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
 //Security measures
-//app.use(helmet());
 app.use(mongoSanitize());
 app.use(xss());
 //Router mounting
 app.use("/", router);
 //Server listening at PORT
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`App running at port ${process.env.PORT}`);
 });
