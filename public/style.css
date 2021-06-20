@@ -78,7 +78,10 @@ nav > a:hover {
 .form {
   width: 40%;
 }
-
+.table td, .table th{
+padding:0.5rem;
+  font-size:small;
+}
 thead {
   background-color: #6592e7;
 }
@@ -95,8 +98,5 @@ thead {
   .form {
     width: 100%;
   }
-  table {
-  font-size: 18px;
-}
 
 }
