@@ -82,13 +82,6 @@ nav > a:hover {
 thead {
   background-color: #6592e7;
 }
-.table td,
-.table th {
-  padding: 0.5rem;
-}
-table {
-  font-size: small;
-}
 .footer {
   background-color: #304771;
 }
